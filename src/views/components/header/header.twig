@@ -130,7 +130,7 @@
 
 
 
-
+{% block scripts %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Define mappings for icons and their active states
@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+{% endblock %}
 {% if store.scope %}
     <salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
 {% endif %}
