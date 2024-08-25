@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>cat</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tab-bar-/-Item" transform="translate(-28.000000, -9.000000)" fill="#757575">
+            <g id="category" transform="translate(28.000000, 9.000000)">
+                <g id="Group" transform="translate(12.500000, 13.000000) scale(-1, 1) rotate(-180.000000) translate(-12.500000, -13.000000) translate(1.000000, 1.000000)">
+                    <path d="M1,19 L4,19 C4.55228475,19 5,19.4477153 5,20 L5,23 C5,23.5522847 4.55228475,24 4,24 L1,24 C0.44771525,24 6.76353751e-17,23.5522847 0,23 L0,20 C-6.76353751e-17,19.4477153 0.44771525,19 1,19 Z M3.99845441,20.0240657 L0.998454411,20.0240657 L0.998454411,23.0240657 L3.99845441,23.0240657 L3.99845441,20.0240657 Z" id="Shape" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" x="7" y="21" width="16" height="1" rx="0.5"></rect>
+                    <path d="M1,10 L4,10 C4.55228475,10 5,10.4477153 5,11 L5,14 C5,14.5522847 4.55228475,15 4,15 L1,15 C0.44771525,15 6.76353751e-17,14.5522847 0,14 L0,11 C-6.76353751e-17,10.4477153 0.44771525,10 1,10 Z M3.99845441,11.0240657 L0.998454411,11.0240657 L0.998454411,14.0240657 L3.99845441,14.0240657 L3.99845441,11.0240657 Z" id="Shape" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" x="7" y="12" width="16" height="1" rx="0.5"></rect>
+                    <path d="M1,0 L4,0 C4.55228475,-1.01453063e-16 5,0.44771525 5,1 L5,4 C5,4.55228475 4.55228475,5 4,5 L1,5 C0.44771525,5 6.76353751e-17,4.55228475 0,4 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z M3.99845441,1.02406568 L0.998454411,1.02406568 L0.998454411,4.02406568 L3.99845441,4.02406568 L3.99845441,1.02406568 Z" id="Shape" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" x="7" y="2" width="16" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

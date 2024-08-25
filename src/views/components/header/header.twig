@@ -81,6 +81,89 @@
       </div>
   </div>
 </header>
+
+
+<nav class="fixed-bottom d-lg-none py-2" style="background-color:white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <a href="/">
+                    <img id="home-icon" src="{{ imageUrl(asset_url ~ 'home.svg') }}" alt="Home">
+                    <div id="mobile-home-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.homes') }}</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/categories">
+                <img id="cats-icon" src="{{ imageUrl(asset_url ~ 'category.svg') }}" alt="Category">
+                  <div id="mobile-cats-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.cats') }}</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/categories">
+                <img id="brands-icon" src="{{ imageUrl(asset_url ~ 'brands.svg') }}" alt="Brands">
+                  <div id="mobile-brands-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.brands') }}</div>
+                </a>
+            </div>
+            <div class="col">
+                <a class="a-shopping-carts" href="/cart">
+                    <img id="cart-icon" src="{{ imageUrl(asset_url ~ 'cart.svg') }}" alt="Cart">
+                    <span class="cart-badge d-none"></span>
+                   <div id="mobile-cart-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.carts') }}</div>
+                </a>
+            </div>
+            <div class="col">
+                {% if user.type=='user' %}
+                  <a href="/profile">
+                    <img class="van-icon__image" src="{{ imageUrl(asset_url ~ 'account.svg') }}">
+                    <div id="mobile-bar-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.profiles') }}</div>
+                  </a>
+               {% else %}
+                 <a href="" onclick="salla.event.dispatch('login::open')">
+                    <img class="van-icon__image" src="{{ imageUrl(asset_url ~ 'account.svg') }}">
+                    <div id="mobile-bar-text" class="mobile-bar-text" style="color: grey;">{{ trans('blocks.header.profiles') }}</div>
+                  </a>
+               {% endif %}
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Define mappings for icons and their active states
+    var icons = [
+        { id: 'home-icon', path: '/', activeSrc: "{{ imageUrl(asset_url ~ 'home-active.svg') }}" },
+        { id: 'cats-icon', path: '/categories', activeSrc: "{{ imageUrl(asset_url ~ 'category-active.svg') }}" },
+        { id: 'brands-icon', path: '/brands', activeSrc: "{{ imageUrl(asset_url ~ 'brands-active.svg') }}" },
+        { id: 'cart-icon', path: '/cart/view', activeSrc: "{{ imageUrl(asset_url ~ 'cart-active.svg') }}" }
+    ];
+
+    // Define mappings for text elements and their colors
+    var texts = [
+        { id: 'mobile-home-text', path: '/' },
+        { id: 'mobile-cats-text', path: '/categories' },
+        { id: 'mobile-brands-text', path: '/brands' },
+        { id: 'mobile-cart-text', path: '/cart/view' }
+    ];
+
+    // Update icons based on the current path
+    icons.forEach(function(icon) {
+        var element = document.getElementById(icon.id);
+        if (element && location.pathname === icon.path) {
+            element.src = icon.activeSrc;
+        }
+    });
+
+    // Update text colors based on the current path
+    texts.forEach(function(text) {
+        var element = document.getElementById(text.id);
+        if (element) {
+            element.style.color = location.pathname === text.path ? 'black' : 'grey';
+        }
+    });
+});
+</script>
 {% if store.scope %}
     <salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
 {% endif %}

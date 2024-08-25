@@ -1,7 +1,12 @@
 {
   "blocks": {
     "header": {
-      "cart": "Cart"
+      "cart": "Cart",
+      "profiles":"Profile",
+      "carts":"Cart",
+      "cats":"Categories",
+      "brands":"Brands",
+      "homes":"Home"
     },
     "appBanner": {
       "download_now": "download now"

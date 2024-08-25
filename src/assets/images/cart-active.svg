@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bag</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tab-bar-/-Item" transform="translate(-28.000000, -9.000000)" stroke="#000000" stroke-width="0.91">
+            <g id="bag" transform="translate(28.000000, 9.000000)">
+                <rect id="Rectangle" x="3" y="9" width="19" height="15" rx="2.73"></rect>
+                <path d="M8,10 L8,3.65986717 C8.83645797,1.88662239 10.174993,1 12.015605,1 C13.856217,1 15.1843487,1.88662239 16,3.65986717 L16,10" id="Path-6" stroke-linecap="round" stroke-linejoin="bevel"></path>
+            </g>
+        </g>
+    </g>
+</svg>
